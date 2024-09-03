@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Farmers Marketplace</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <!-- Header -->
+<header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <h1 style="font-size: x-large;">CropJob</h1>
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="../index.html" class="nav-link px-2 text-white">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Grains</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Vegitables</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Fruits</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Flowers</a></li>
+                <li><a href="#" class="nav-link px-2 text-secondary">Market</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Search for farmers/crops" aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="px-4 py-5 my-5 text-center hero-section" style="background-image: url('../Supporting Images/MarketPlace.jpg'); background-size: cover;">
+        <img src="" alt="Logo" width="100" class="mb-4" style="display: none; filter: blur(2px);" />
+        <h1 class="display-5 fw-bold text-body-emphasis">Farmers Marketplace</h1>
+        <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 font-weight-bold">
+            Discover and connect with local farmers, buy and sell their products, and learn about sustainable farming practices.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3 font-weight-bold">Find Farmers</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4 font-weight-bold">Sell Products</button>
+        </div>
+        </div>
+        <p class="text-center text-body-secondary"></p>
+    </div>
+
+    <!-- Farmer Cards -->
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+            <img src="./assets/Farmer1.jpg" class="card-img-top" alt="Farmer 1" />
+            <div class="card-body">
+                <h5 class="card-title">Farmer 1</h5>
+                <p class="card-text">Crops sold: Wheat and Rice</p>
+                <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <a href="farmer1-profile.html" class="btn btn-primary mt-2" data-toggle="modal" data-target="#farmer1Modal">Profile</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Repeat similar blocks for other farmers -->
+        <!-- Farmer 2 -->
+        <div class="col-md-4">
+            <div class="card">
+            <img src="./assets/Farmer2.jpg" class="card-img-top" alt="Farmer 2" />
+            <div class="card-body">
+                <h5 class="card-title">Farmer 2</h5>
+                <p class="card-text">Crops sold: Potato and Carrots</p>
+                <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <a href="farmer2-profile.html" class="btn btn-primary mt-2" data-toggle="modal" data-target="#farmer2Modal">Profile</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Farmer 3 -->
+        <div class="col-md-4">
+            <div class="card">
+            <img src="./assets/Farmer3.jpg" class="card-img-top" alt="Farmer 3" />
+            <div class="card-body">
+                <h5 class="card-title">Farmer 3</h5>
+                <p class="card-text">Crops sold: Dragon Fruits</p>
+                <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                <a href="farmer3-profile.html" class="btn btn-primary mt-2" data-toggle="modal" data-target="#farmer3Modal">Profile</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2024 Farmers Marketplace, Inc</p>
+
+        <div class="footer-social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="./toggle-theme.js"></script> -->
+    </body>
+</html>
