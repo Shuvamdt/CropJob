@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Cropjob</div>
+        
+        <nav class="nav">
+            <div class="nav-item">Pritam</div>
+        </nav>
+    </header>
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-pic"></div>
+                <div class="profile-name">Hello, Pritam Jana</div>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="sidebar-item">MY SELLINGS
+                    <ul class="submenu">
+                        <li onclick="loadCrops()">Crops</li>
+                        
+                    </ul>
+                </li>
+
+                <li class="sidebar-item active">ACCOUNT SETTINGS
+                    <ul class="submenu">
+                        <li onclick="loadProfile()" class="submenu-item active">Profile Information</li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">PAYMENTS
+                    <ul class="submenu">
+                        <li onclick="loadUpi()" class="submenu-item">Saved UPI</li>
+                        <li onclick="loadCar()" class="submenu-item">Saved Cards</li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="content" id="content">
+            <div class="section-title">Personal Information </div>
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" value="">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" value="">
+                </div>
+                <div class="form-group">
+                    <label>Your Gender</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address </label>
+                    <input type="email" id="email" value="">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number </label>
+                    <input type="tel" id="mobile" value="">
+                </div>
+                <div class="form-group">
+                    <label for="address">Pickup address </label>
+                    <input type="tel" id="address" value="">
+                </div>
+                
+            </form>
+            <button class="save">SAVE</button>
+        </section>
+    </div>
+
+    <script>
+        function loadCrops() {
+            fetch('index2.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading crops:', error));
+        }
+        function loadProfile() {
+            fetch('index3.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading crops:', error));
+        }
+        function loadUpi() {
+            fetch('index4.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading crops:', error));
+        }
+        function loadCard() {
+            fetch('index5.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading crops:', error));
+        }
+    </script>
+</body>
+</html>
