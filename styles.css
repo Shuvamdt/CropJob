@@ -1,27 +1,28 @@
-body{
+body {
     background-color: #EDF1D6;
     color: #40513B;
 }
-    .custom-navbar {
-        background-color: #40513B;
-    }
-
-    .custom-navbar .navbar-brand, 
-    .custom-navbar .nav-link {
-        color: #EDF1D6; 
-    }
-
-    .custom-navbar .nav-link:hover {
-        color: #EDF1D6; 
-    }
-    .btn-custom{
-        background-color: #609966;
-    }
-    
-    .playpen-sans {
+.custom-navbar {
+    background-color: #40513B;
+}
+.custom-navbar .navbar-brand, 
+.custom-navbar .nav-link {
+    color: #EDF1D6;
+}
+.custom-navbar .nav-link:hover {
+    color: #9DC08B;
+}
+.btn-custom {
+    background-color: #609966;
+    border: none;
+}
+.playpen-sans {
     font-family: "Playpen Sans", cursive;
-    font-optical-sizing: auto;
     font-size: 25px;
     font-weight: 800;
-    font-style: normal;
-    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
