@@ -1,20 +1,13 @@
 
 /* Common Styles */
 body{
-    background-color: #FFF8EA;
+    background-color: #EDF1D6;
+    color: #40513B;
 }
-.navbar-nav .nav-item .nav-link.active {
-    color: #ffc107;
-}
-
 .card:hover {
     transform: scale(1.05);
     transition: 0.3s;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.rating .checked {
-    color: orange;
+    box-shadow: 0px 4px 15px #40513B;
 }
 
 .footer-social-icons {
@@ -26,14 +19,14 @@ body{
 }
 
 .footer-social-icons a {
-    color: #555;
+    color: #40513B;
     padding: 0 10px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-social-icons a:hover {
-    color: #333;
+    color: #40513B;
 }
 
 .hero-section {
@@ -44,3 +37,29 @@ body{
             padding: 50px;
             text-align: center;
         }
+
+        .custom-navbar {
+            background-color: #40513B;
+        }
+    
+        .custom-navbar .navbar-brand, 
+        .custom-navbar .nav-link {
+            color: #EDF1D6; 
+        }
+    
+        .custom-navbar .nav-link:hover {
+            color: #EDF1D6; 
+        }
+        .btn-custom{
+            background-color: #609966;
+        }
+        .playpen-sans {
+            font-family: "Playpen Sans", cursive;
+            font-optical-sizing: auto;
+            font-size: 25px;
+            font-weight: 800;
+            font-style: normal;
+            }
+.text-custom{
+    color: #40513B;
+}

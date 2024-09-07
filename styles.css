@@ -1,7 +1,27 @@
-h2{
-    position: absolute;
-    bottom: 325px;
-    text-align: left;
-    text-shadow: 4px;
-    color: aliceblue;
+body{
+    background-color: #EDF1D6;
+    color: #40513B;
 }
+    .custom-navbar {
+        background-color: #40513B;
+    }
+
+    .custom-navbar .navbar-brand, 
+    .custom-navbar .nav-link {
+        color: #EDF1D6; 
+    }
+
+    .custom-navbar .nav-link:hover {
+        color: #EDF1D6; 
+    }
+    .btn-custom{
+        background-color: #609966;
+    }
+    
+    .playpen-sans {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: normal;
+    }
